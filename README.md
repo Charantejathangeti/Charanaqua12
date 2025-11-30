@@ -1,20 +1,13 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Charan Aquarium - Full Website
 
-# Run and deploy your AI Studio app
+Quick start (development)
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1GiuYqk9dY_6pqcXjtN_qh3Cd-qnt2vv7
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+1. Install dependencies: `npm install`
+2. Run server: `npm run dev` (requires nodemon) or `npm start`
+3. Open http://localhost:3000
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Notes:
+- Admin login is protected by a simple env password (see server.js). For production replace with proper auth.
+- OTP is simulated: server prints OTP to console for development.
+- WhatsApp checkout uses wa.me link to 6302382280.
